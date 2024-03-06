@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <title> Image gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <main>
+        <h2>
+            Popular collections
+        </h2>
+        <ul class="categories">
+            
+            
+            <li>
+                <a class="category"> Nature </a>
+            </li>
+            <li>
+                <a class="category"> History </a>
+            </li>
+            <li>
+                <a class="category"> Person </a>
+            </li>
+        </ul>
+
+        <section class="galleries">
+
+            <article class="gallery" data-category="person">
+                <div class="gallery_images">
+
+                <div  class="gallery_images-thumbnail">
+                    <img src="Assets/project-1-of-5-assets-main/person_images/leo_da_vinci.jpeg" alt="Person One" class="gallery-thumbnail" onclick="openGallery('profile')">
+                    <img src="Assets/project-1-of-5-assets-main/person_images/alan_turing.jpeg" alt=" Person Two" class="gallery-thumbnail" onclick="openGallery('profile')">
+                    <img src="Assets/project-1-of-5-assets-main/person_images/steve_jobs.jpg" alt="Person Three" class="gallery-thumbnail" onclick="openGallery('profile')">
+                    <img src="Assets/project-1-of-5-assets-main/person_images/albert_einstein.jpg" alt="Person Four" class="gallery-thumbnail" onclick="openGallery('profile')">
+                </div>
+                
+                </div>
+                <div class="gallery_info">
+                     <p>Person</p>
+                     <small><i class="uis uis-image-v"></i></small>
+                </div>
+            </article>
+
+            <article class="gallery" data-category="history">
+                <div class="gallery_images">
+
+                <div  class="gallery_images-thumbnail">
+                    <img src="Assets/project-1-of-5-assets-main/history_images/colosseum.jpg" alt="History One" class="gallery-thumbnail" onclick="openGall('profile')">
+                    <img src="Assets/project-1-of-5-assets-main/history_images/pyramids_of_giza.jpg" alt="History Two" class="gallery-thumbnail" onclick="openGall('profile')">
+                    <img src="Assets/project-1-of-5-assets-main/history_images/taj_mahal.jpg" alt="history Three" class="gallery-thumbnail" onclick="openGall('profile')">
+                    <img src="Assets/project-1-of-5-assets-main/history_images/stonehenge.jpg" alt="History Four" class="gallery-thumbnail" onclick="openGall('profile')">
+                </div>
+                
+                </div>
+                <div class="gallery_info">
+                     <p>History</p>
+                     <small><i class="uis uis-image-v"></i></small>
+                </div>
+            </article>
+
+            <article class="gallery" data-category="nature">
+                <div class="gallery_images">
+
+                <div  class="gallery_images-thumbnail">
+                    <img src="Assets/project-1-of-5-assets-main/nature_images/nature3.jpg" alt="Nature One" class="gallery-thumbnail" onclick="opengal('profile')">
+                    <img src="Assets/project-1-of-5-assets-main/nature_images/nature1.jpg" alt="Nature Two" class="gallery-thumbnail" onclick="opengal('profile')">
+                    <img src="Assets/project-1-of-5-assets-main/nature_images/nature5.jpeg" alt="Nature Three" class="gallery-thumbnail" onclick="opengal('profile')">
+                    <img src="Assets/project-1-of-5-assets-main/nature_images/nature4.jpg" alt="Nature Four" class="gallery-thumbnail" onclick="opengal('profile')">
+                </div>
+                
+                </div>
+                <div class="gallery_info">
+                     <p>Nature</p>
+                     <small><i class="uis uis-image-v"></i></small>
+                </div>
+            </article>
+            
+        </section>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,221 @@
+body {
+    background-color: rgb(142, 190, 232);
+
+    display: grid;
+    place-items: center;
+    height: 100vh; 
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+    color: var(--color-dark);
+    overflow: auto; /* Prevent vertical scrolling */
+}
+
+main {
+    background: var(--color-light);
+    width: 90%;
+    max-width: 1200px; 
+    padding: 3rem;
+    border-radius: 1rem;
+    overflow: auto; /* Enable scrolling for main content if needed */
+}
+.firstsentence {
+    background-color: rgb(247, 247, 155);
+    text-align: center;
+    font-size: 50px;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    margin-left: 5%;
+    margin-right:5%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#purpose {
+    color:aliceblue ;
+    border-style: solid;
+    border-color: black;
+    background-color: rgb(142, 190, 232) ;
+    border-width: 3px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 7%;
+    text-align: center;
+    padding-bottom: 5%;
+    padding-top: 3%;
+    font-size: 50px;
+    text-decoration: none;
+    background-image: url("white-paper-crumpled-texture-background-free-photo.jpg");
+}
+
+
+
+.checkbox-border {
+        border-style: solid;
+        border-color: aliceblue;
+        background-color: aliceblue;
+        border-width: 3px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 10%;
+        padding-top: none;
+        padding-bottom: 10%;
+        text-align: left;
+    
+}
+
+.purposeandcheckbox {
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    margin: 5%;
+    background-color: aliceblue;
+
+}
+
+input[type=radio] {
+    border: 0px;
+    width: 10%;
+    height: 2em;
+}
+
+#personaltext {
+    font-size: 20px;
+    color: rgb(161, 69, 200);
+    font-weight: bold;
+}
+#businesstext {
+    font-size: 20px;
+    color:crimson;
+    font-weight: bold;
+}
+
+.animated-profile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.profile {
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    flex: 1; /* Equal width for all profile items */
+    margin: 1%; /* Adjust the margin for spacing between profile items */
+}
+
+.profile:hover {
+    transform: scale(1.1);
+}
+
+/* Ensure that the images have a consistent width */
+.profile-icon img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.profile-info h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.profile-info p {
+    margin: 0;
+    font-size: 16px;
+    color: #666;
+}
+.lock-screen-time {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333; /* Adjust color as needed */
+}
+
+.lock-screen-date {
+    font-size: 16px;
+    color: #666; /* Adjust color as needed */
+}
+
+
+/* Responsive Web Development*/
+
+@media only screen and (min-width: 600px) {
+    main {
+        max-width: 80%;
+    }
+
+    .firstsentence {
+        font-size: 60px;
+    }
+
+    #purpose {
+        font-size: 60px;
+    }
+
+    .checkbox-border,
+    .purposeandcheckbox {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .profile-icon img {
+        width: 100px; /* Adjust as needed */
+    }
+
+    .profile-info h3 {
+        font-size: 24px;
+    }
+
+    .profile-info p {
+        font-size: 18px;
+    }
+
+    .lock-screen-time {
+        font-size: 20px;
+    }
+
+    .lock-screen-date {
+        font-size: 18px;
+    }
+}
+
+/* Styles for even larger screens (e.g., desktops) */
+@media only screen and (min-width: 1200px) {
+    main {
+        max-width: 1000px;
+    }
+
+    .firstsentence {
+        font-size: 70px;
+    }
+
+    #purpose {
+        font-size: 70px;
+    }
+
+    .checkbox-border,
+    .purposeandcheckbox {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .profile-icon img {
+        width: 120px; /* Adjust as needed */
+    }
+
+    .profile-info h3 {
+        font-size: 30px;
+    }
+
+    .profile-info p {
+        font-size: 22px;
+    }
+
+    .lock-screen-time {
+        font-size: 24px;
+    }
+
+    .lock-screen-date {
+        font-size: 22px;
+    }
+}
